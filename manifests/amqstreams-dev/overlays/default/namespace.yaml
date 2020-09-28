@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: "AMQ Streams Dev Environment"
+    openshift.io/display-name: "kafka-dev"
+  name: kafka-dev
