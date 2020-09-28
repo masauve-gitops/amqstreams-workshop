@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amqstreams-prod
+  name: amqstreams-oauth
 spec:
   destination:
     namespace: argocd
