@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: "AMQ Streams OAuth Environment"
+    openshift.io/display-name: "kafka-oauth"
+  name: kafka-oauth

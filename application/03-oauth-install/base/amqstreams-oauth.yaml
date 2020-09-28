@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: amqstreams-prod
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: amqstreams
+  source:
+    path: manifests/03-oauth-install/overlays/default
+    repoURL: https://github.com/masauve-gitops/amqstreams-workshop.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
