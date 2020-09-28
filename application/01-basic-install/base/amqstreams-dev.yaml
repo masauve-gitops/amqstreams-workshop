@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: amqstreams
   source:
-    path: manifests/amqstreams-dev/overlays/default
+    path: manifests/01-basic-install/overlays/default
     repoURL: https://github.com/masauve-gitops/amqstreams-workshop.git
     targetRevision: master
   syncPolicy:
